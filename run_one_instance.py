@@ -21,7 +21,6 @@ def main():
     parser.add_argument('-n', '--num-agents', type=int, default=10, help='Number of agents')
     parser.add_argument('-t', '--time-limit', type=int, default=60000, help='Time limit (ms)')
     parser.add_argument('-o', '--output', default='result.txt', help='Output file path')
-    parser.add_argument('-v', '--verbose', action='store_true', help='Verbose output')
     parser.add_argument('--task', required=True, help='Task file (.task)')
     args = parser.parse_args()
 
@@ -78,8 +77,6 @@ def main():
 
     # Run solver
     cmd = [exe_path, "-i", ins_file, "-s", args.solver, "-o", args.output]
-    if args.verbose:
-        cmd.append("-v")
 
     print(f"\nRunning: {' '.join(cmd)}\n")
     result = subprocess.run(cmd)

@@ -39,7 +39,6 @@ python run_one_instance.py -m <map> -s <solver> -n <num-agents> --task <task-fil
 - `-n, --num-agents`: Number of agents (default: 10)
 - `-t, --time-limit`: Time limit in milliseconds (default: 60000)
 - `-o, --output`: Output file path (default: `result.txt`)
-- `-v, --verbose`: Verbose output
 - `--task`: Task file path (required)
 
 **Examples:**
@@ -53,9 +52,6 @@ python run_one_instance.py -m dataset/map/empty-8-8.map -s GPIBT-R -n 10 --task 
 
 # Run on a 32x32 random map
 python run_one_instance.py -m dataset/map/random-32-32-10.map -s GPIBT-R -n 20 --task dataset/task/random-32-32-10-random-1.task -o result.txt
-
-# With verbose output
-python run_one_instance.py -m dataset/map/empty-8-8.map -s GPIBT-R -n 10 --task dataset/task/empty-8-8-random-1.task -o result.txt -v
 ```
 
 ## License
