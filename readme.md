@@ -46,16 +46,16 @@ python run_one_instance.py -m <map> -s <solver> -n <num-agents> --task <task-fil
 
 ```bash
 # Run GPIBT-B on an empty 8x8 map
-python run_one_instance.py -m dataset/map/empty-8-8.map -s GPIBT-B -n 10 --task dataset/task/empty-8-8-random-1.task
+python run_one_instance.py -m dataset/map/empty-8-8.map -s GPIBT-B -n 10 --task dataset/task/empty-8-8-random-1.task -o result.txt
 
 # Run GPIBT-R on the same map
-python run_one_instance.py -m dataset/map/empty-8-8.map -s GPIBT-R -n 10 --task dataset/task/empty-8-8-random-1.task
+python run_one_instance.py -m dataset/map/empty-8-8.map -s GPIBT-R -n 10 --task dataset/task/empty-8-8-random-1.task -o result.txt
 
 # Run on a 32x32 random map
-python run_one_instance.py -m dataset/map/random-32-32-10.map -s GPIBT-R -n 20 --task dataset/task/random-32-32-10-random-1.task
+python run_one_instance.py -m dataset/map/random-32-32-10.map -s GPIBT-R -n 20 --task dataset/task/random-32-32-10-random-1.task -o result.txt
 
 # With verbose output
-python run_one_instance.py -m dataset/map/empty-8-8.map -s GPIBT-R -n 10 --task dataset/task/empty-8-8-random-1.task -v
+python run_one_instance.py -m dataset/map/empty-8-8.map -s GPIBT-R -n 10 --task dataset/task/empty-8-8-random-1.task -o result.txt -v
 ```
 
 ## License
