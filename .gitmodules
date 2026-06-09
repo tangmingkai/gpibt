@@ -1,0 +1,3 @@
+[submodule "third_party/grid-pathfinding"]
+	path = third_party/grid-pathfinding
+	url = https://github.com/Kei18/grid-pathfinding.git
